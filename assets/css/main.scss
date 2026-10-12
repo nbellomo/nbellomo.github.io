@@ -1,0 +1,121 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/*******************************************************************************
+ * Site-local customizations (this file shadows the al_folio_core copy; the
+ * imports above are identical to upstream, only the rules below are local).
+ *
+ * Procedural background texture: a fixed, full-viewport layer behind the
+ * content, built entirely in CSS — a fractal-noise grain (inline SVG
+ * feTurbulence, no image files to load) plus two very soft radial tints in
+ * the theme color. It is composited once by the browser, so it costs nothing
+ * while scrolling, and it adapts automatically to light and dark mode.
+ ******************************************************************************/
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(ellipse 90% 65% at 12% -5%, color-mix(in srgb, var(--global-theme-color) 12%, transparent) 0%, transparent 65%),
+    radial-gradient(ellipse 75% 55% at 90% 105%, color-mix(in srgb, var(--global-theme-color) 9%, transparent) 0%, transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.085'/%3E%3C/svg%3E");
+  background-size:
+    100% 100%,
+    100% 100%,
+    240px 240px;
+}
+
+html[data-theme="dark"] body::before {
+  background-image:
+    radial-gradient(ellipse 90% 65% at 12% -5%, color-mix(in srgb, var(--global-theme-color) 16%, transparent) 0%, transparent 65%),
+    radial-gradient(ellipse 75% 55% at 90% 105%, color-mix(in srgb, var(--global-theme-color) 12%, transparent) 0%, transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.11'/%3E%3C/svg%3E");
+  background-size:
+    100% 100%,
+    100% 100%,
+    240px 240px;
+}
+
+.navbar-cat-toggle {
+  width: 2rem;
+  height: 2rem;
+  margin-left: auto;
+  margin-right: 0.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--global-text-color);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--global-hover-color);
+    background: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
+    outline: none;
+  }
+}
+
+:root {
+  --global-theme-color: #56beef; /* your main accent color */
+  --global-hover-color: #025272; /* hover state */
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #7dd3fc;
+  --global-hover-color: #bae6fd;
+}
+
+@media (min-width: 576px) {
+  .navbar-cat-toggle {
+    margin-left: 1rem;
+  }
+}
+
+/* The long blog title ("...Gravitational-Wave Sky") overflows phone screens
+   at the default header size, causing horizontal scrolling. */
+@media (max-width: 575.98px) {
+  .header-bar h1 {
+    font-size: 2.75rem;
+    overflow-wrap: break-word;
+  }
+}

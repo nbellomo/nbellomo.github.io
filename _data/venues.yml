@@ -1,0 +1,9 @@
+# Venue abbreviations used in _bibliography/papers.bib (the `abbr` field).
+# Entries here turn the abbreviation badge into a link with a custom color.
+"JCAP":
+  url: https://iopscience.iop.org/journal/1475-7516
+  color: "#8c1515"
+
+"PRD":
+  url: https://journals.aps.org/prd/
+  color: "#00369f"

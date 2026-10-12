@@ -1,0 +1,21 @@
+# Frequent co-authors: entries here turn author names in the publication list into links.
+# The key is the lower-cased last name (no accents); firstname lists the accepted variants.
+"verde":
+  - firstname: ["Licia", "L."]
+    url: https://inspirehep.net/authors/1010027
+
+"raccanelli":
+  - firstname: ["Alvise", "A."]
+    url: https://inspirehep.net/authors/1052134
+
+"matarrese":
+  - firstname: ["Sabino", "S."]
+    url: https://inspirehep.net/authors/996810
+
+"bertacca":
+  - firstname: ["Daniele", "D."]
+    url: https://inspirehep.net/authors/1041818
+
+"bernal":
+  - firstname: ["José Luis", "Jose Luis", "J. L.", "J."]
+    url: https://inspirehep.net/authors/1478578

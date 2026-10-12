@@ -1,0 +1,83 @@
+cv:
+  name: Nicola Bellomo
+  label: Gravitational-Wave Cosmologist
+  email: nicola.bellomo@example.edu # PROXY: replace with the real email
+  location: Padova, Italy
+  image: ""
+  summary: Cosmologist working on gravitational-wave backgrounds, primordial black holes, and the cross-correlation of gravitational-wave sources with the large-scale structure of the Universe.
+
+  social_networks:
+    - network: ORCID
+      username: 0000-0002-4375-705X
+
+  address:
+    street: Via Marzolo 8 # PROXY: confirm the real office address
+    city: Padova
+    region: Veneto
+    postalCode: 35131
+    countryCode: IT
+
+  sections:
+    Education:
+      - institution: University of Barcelona, Institute of Cosmos Sciences (ICCUB)
+        location: Barcelona, Spain
+        url: https://icc.ub.edu/
+        area: Cosmology
+        studyType: PhD
+        start_date: 2016
+        end_date: 2020
+        highlights:
+          - PROXY — Thesis title and advisor go here.
+          - PROXY — Add fellowships or distinctions here.
+
+      - institution: PROXY — MSc Institution
+        location: PROXY — City, Country
+        area: Physics
+        studyType: MSc
+        start_date: 2013
+        end_date: 2016
+        highlights:
+          - PROXY — Add thesis title and grade here.
+
+    Experience:
+      - company: University of Padova & INFN Padova
+        position: Researcher
+        location: Padova, Italy
+        start_date: 2022 # PROXY: confirm the real start date
+        summary: Research on gravitational-wave cosmology, the astrophysical gravitational-wave background, and forecasts for upcoming facilities such as the SKA Observatory.
+
+      - company: The University of Texas at Austin
+        position: Postdoctoral Fellow
+        location: Austin, TX, USA
+        start_date: 2020
+        end_date: 2022 # PROXY: confirm the real end date
+        summary: Research on gravitational-wave backgrounds and cosmological parameter inference.
+
+    Awards:
+      - title: PROXY — Award Or Fellowship Name
+        date: 2021
+        awarder: PROXY — Awarding Institution
+        summary: PROXY — One-line description of the award.
+
+    Software:
+      - name: CLASS_GWB
+        summary: Public extension of the CLASS Boltzmann code computing the angular power spectrum of the astrophysical gravitational-wave background for arbitrary source populations and detector networks.
+        highlights:
+          - Gravitational-wave background anisotropies
+          - Line-of-sight projection effects
+        start_date: 2021
+
+    Languages:
+      - name: Italian
+        summary: Native speaker
+
+      - name: English
+        summary: Fluent
+
+      - name: Spanish # PROXY: adjust languages as needed
+        summary: Fluent
+
+    Interests:
+      - name: Research Topics
+        icon: fa-solid fa-tag
+        keywords: "Gravitational-Wave Backgrounds, Primordial Black Holes, Large-Scale Structure, Pulsar Timing Arrays, Cosmological Forecasts"
