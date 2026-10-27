@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Gravitational-Wave Cosmologist · <a href='https://www.unipd.it/en/' target='_blank'>University Of Padova</a> · INFN Padova
+subtitle: Gravitational-Wave Cosmologist · <a href='https://www.unipd.it/en/' target='_blank'>University Of Padova</a>
 
 profile:
   align: right
@@ -32,13 +32,13 @@ latest_posts:
 <!-- The normal biography. To edit it, change the text inside the div below. -->
 
 <div id="bio-human" markdown="1">
-I am a cosmologist working at the interface between gravitational-wave astronomy and the large-scale structure of the Universe. My research focuses on what gravitational waves can teach us about the cosmos as a whole: the anisotropies of the astrophysical gravitational-wave background, primordial black holes as a dark matter candidate, and the cross-correlation of gravitational-wave sources with galaxy surveys.
+I am a cosmologist working at the interface between gravitational-wave astronomy and the large-scale structure of the Universe. My research focuses on what gravitational waves can teach us about the cosmos, such as what is the nature of dark matter and dark energy and what are the astrophysical and cosmological processes that source gravitational waves.
 
 <!-- PROXY: review and personalize this biography. -->
 
-I am currently a researcher at the University of Padova and INFN, where I develop theoretical models and numerical tools — such as [CLASS_GWB](https://arxiv.org/abs/2110.15059) — that connect gravitational-wave observations with the standard toolkit of modern cosmology. I am also involved in forecasting the science reach of upcoming facilities, from pulsar timing arrays to the SKA Observatory and next-generation interferometers.
+I am currently a researcher at the University of Padova, where I develop theoretical models and numerical tools that connect gravitational-wave observations with the standard toolkit of modern cosmology. I am also involved in forecasting the science reach of upcoming facilities, from pulsar timing arrays to the SKA Observatory and next-generation interferometers.
 
-Before moving to Padova I was a postdoctoral fellow at the University of Texas at Austin, and I obtained my PhD at the Institute of Cosmos Sciences of the University of Barcelona.
+Before moving to Padova, I was a postdoctoral fellow at the University of Texas at Austin, and I obtained my PhD at the Institute of Cosmos Sciences of the University of Barcelona.
 
 </div>
 
