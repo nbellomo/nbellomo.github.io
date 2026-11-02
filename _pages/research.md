@@ -10,13 +10,9 @@ horizontal: false
 
 <!-- The ten-line research description. Edit the text below to update it. PROXY: review and personalize. -->
 
-My research sits at the crossroads of gravitational-wave astronomy and cosmology. Gravitational waves opened a genuinely new window on the Universe: they let us count and characterize populations of compact objects, probe epochs and environments that are invisible to light, and test gravity in regimes far beyond the reach of laboratory experiments.
+The core of my research sits at the crossroads of Gravitational Wave Astronomy and Cosmology. I became very interested in gravitational waves since they opened a genuinely new window into our Universe. In particular, I investigate how the anisotropic distribution of gravitational waves can provide a view of the structure of the Universe that is complementary to that of more traditional astrophysical objects, such as galaxies. In the near future, thanks to an accurate modeling of gravitational wave anisotropies, it will be possible to test not only the physics of compact objects but also how our Universe evolved from its first instants to the present day.
 
-I am particularly interested in treating gravitational-wave observables the way cosmologists treat galaxies: as tracers of the underlying large-scale structure. The astrophysical gravitational-wave background — the superposition of countless unresolved mergers — carries anisotropies that encode both the astrophysics of its sources and the cosmology of the spacetime the signal travels through. Modeling these anisotropies accurately, and extracting them from data, is one of the central threads of my work.
-
-The other main thread concerns primordial black holes: could some of the black holes we observe have formed in the early Universe, and could they make up part of the dark matter? Answering this question requires connecting early-Universe physics to present-day observables, from merger rates to the primordial curvature power spectrum.
-
-Below are the main topics I currently work on. Click on any card to read more.
+However, over the course of my career, I have worked on numerous topics, for instance dark matter, dark energy, and inflationary physics. All these topics still represent open questions in modern day Cosmology, and my research mainly aims to provide a way of testing the intrinsic nature of the Early and Late Universe. Below you can find the main topics I am currently working on; click on any card to read more.
 
 <!-- Research highlight cards, generated from the files in the `_projects` folder. -->
 
