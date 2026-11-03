@@ -40,7 +40,7 @@ nav_order: 4
 - Lorenzo Piga (later PhD student at University of Parma with Guido D'Amico) <br>
   [Effects of accreting Primordial Black Holes on the Cosmic Microwave Background]
 
-- David Figueruelo (later PhD student at University of Salamanca with Jos'e Beltr'an Jim'enez) <br>
+- David Figueruelo (later PhD student at University of Salamanca with Jose Beltran Jimenez) <br>
   [Dark Energy - Neutrinos energy transfer]
 
 - Alba Kalaja (later PhD student at University of Groeningen with Dan Meerburg) <br>
